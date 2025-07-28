@@ -1,0 +1,23 @@
+
+
+.button {
+    background: linear-gradient(to right, #1e1e1e, #3b2e2a); 
+    color: #f0e6c8;
+    border: 2px solid #d4af37; 
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    padding: 0.75em 1.5em;
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        background: #d4af37; 
+        color: #1e1e1e; 
+        box-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
+        transform: scale(1.05);
+    }
+}

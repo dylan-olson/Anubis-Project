@@ -1,0 +1,135 @@
+/* Typography */
+
+// headings
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	vertical-align: top;
+    text-shadow: 0 10px 0 rgba(0, 0, 0, .15);
+}
+
+h1, .h1 {
+	font-size: clamp-min-max(5.6, 6.4, 420, 1440);
+    font-family: $headerFont;
+	font-weight: 600;
+	letter-spacing: -0.04em;
+	line-height: 1;
+	margin: 0 0 1em;
+}
+
+h2, .h2 {
+	letter-spacing: -0.03em;
+    font-family: $headerFont;
+	font-size: clamp-min-max(4.0, 4.8, 420, 1440);
+	font-weight: 600;
+	line-height: 1;
+	margin: 0 0 1em;
+}
+
+h3, .h3 {
+	font-size: clamp-min-max(3.2, 4.0, 420, 1440);
+    font-family: $headerFont;
+	font-weight: 600;
+	letter-spacing: -0.03em;
+	line-height: 1.1;
+	margin: 0 0 .5em;
+}
+
+h4, .h4 {
+	font-size: clamp-min-max(2.4, 2.8, 420, 1440);
+    font-family: $headerFont;
+	font-weight: 600;
+	letter-spacing: -0.03em;
+	line-height: 1.1;
+	margin: 0 0 .5em;
+}
+
+h5, .h5 {
+	font-size: clamp-min-max(1.8, 2.2, 420, 1440);
+    font-family: $bodyFont;
+	font-weight: 600;
+	line-height: 1.33;
+	margin: 0 0 .5em;
+}
+
+h6, .h6 {
+	font-size: clamp-min-max(1.6, 1.8, 420, 1440);
+    font-family: $headerFont;
+    font-style: italic;
+	font-weight: 400;
+	line-height: 1.33;
+	margin: 0 0 .5em;
+}
+
+// paragraphs
+p {
+	font-size: clamp-min-max(1.6, 1.8, 420, 1440);
+    font-family: $bodyFont;
+	font-weight: 400;
+	line-height: 1.7;
+	margin: 0 0 3rem;
+}
+
+// bold
+strong, b {
+	color: #000;
+	font-weight: 600;
+}
+
+// lists 
+ul, ol {
+	width: 100%;
+	margin: 0 0 2rem 0;
+	li {
+		width: auto;
+		display: block;
+        font-family: $bodyFont;
+		margin: 0 0 1rem 0;
+	}
+}
+
+// links
+a:not([class*="button"]):visited,
+a:not([class*="button"]):active,
+a:not([class*="button"]):focus {
+	text-decoration: none;
+}
+
+a:not([class*="button"]) {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	font-weight: 600;
+	color: $gold;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		color: #000;
+	}
+	.reverse-text & {
+		color: #FFF;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}
+
+.text-content h1 a:not([class*="button"]),
+.text-content h2 a:not([class*="button"]),
+.text-content h3 a:not([class*="button"]),
+.text-content h4 a:not([class*="button"]),
+.text-content h5 a:not([class*="button"]),
+.text-content h6 a:not([class*="button"]),
+.text-content p a:not([class*="button"]),
+.text-content li a:not([class*="button"]) {
+	max-width: 100%;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        margin: 0;
+    }
+}

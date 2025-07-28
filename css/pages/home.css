@@ -1,0 +1,40 @@
+/* Home Page */
+#home-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+#home-hero .hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  container-type: size;
+  overflow: hidden;
+  z-index: -2;
+}
+#home-hero .hero-bg iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background: none;
+  pointer-events: none;
+  z-index: 1;
+}
+@container (min-aspect-ratio: 16/9) {
+  #home-hero .hero-bg iframe {
+    height: 56.25cqw;
+  }
+}
+@container (max-aspect-ratio: 16/9) {
+  #home-hero .hero-bg iframe {
+    width: 177.78cqh;
+  }
+}
